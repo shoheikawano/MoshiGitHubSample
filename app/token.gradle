@@ -1,0 +1,6 @@
+android {
+    defaultConfig {
+        // Generate your token at https://github.com/settings/tokens
+        buildConfigField("String", "GITHUB_OAUTH_TOKEN", "\"YOUR GITHUB OAUTH TOKEN\"")
+    }
+}

@@ -1,0 +1,15 @@
+android {
+    signingConfigs {
+        release {
+            storeFile file("./releasing/githubsample.keystore")
+            storePassword "githubsample"
+            keyAlias "GitHubSample"
+            keyPassword "githubsample"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+}
